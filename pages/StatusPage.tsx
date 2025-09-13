@@ -71,10 +71,10 @@ const StatusPage: React.FC = () => {
                         value={bookingNumber}
                         onChange={(e) => setBookingNumber(e.target.value)}
                         placeholder="Enter your booking number (e.g., SPK...)"
-                        className="flex-grow block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500"
+                        className="flex-grow block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                         aria-label="Booking Number"
                     />
-                    <button type="submit" disabled={isLoading} className="bg-sky-500 text-white px-6 py-3 rounded-md hover:bg-sky-600 disabled:bg-gray-400">
+                    <button type="submit" disabled={isLoading} className="bg-teal-500 text-white px-6 py-3 rounded-md hover:bg-teal-600 disabled:bg-gray-400 transition-colors">
                         {isLoading ? 'Checking...' : 'Check'}
                     </button>
                 </form>
@@ -83,10 +83,10 @@ const StatusPage: React.FC = () => {
             <div className="mt-12 max-w-2xl mx-auto">
                 {error && <p className="text-center text-red-500 text-lg">{error}</p>}
                 {booking && (
-                    <div className="bg-white p-8 rounded-lg shadow-lg animate-fadeIn text-center">
+                    <div className="bg-white p-8 rounded-lg shadow-lg animate-fadeIn text-center border border-slate-200">
                         <h2 className="text-2xl font-bold text-gray-800 mb-4">Booking Details</h2>
                         <p className="text-gray-600 mb-2">Booking Number:</p>
-                        <p className="text-2xl font-mono font-bold text-sky-600 mb-6">{booking.bookingNumber}</p>
+                        <p className="text-2xl font-mono font-bold text-teal-600 mb-6">{booking.bookingNumber}</p>
                         <div className={getStatusChip(booking.status)}>{booking.status}</div>
                         <div className="mt-6 text-left border-t pt-6 space-y-4">
                             <div>

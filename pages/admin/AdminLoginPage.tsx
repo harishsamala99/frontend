@@ -32,7 +32,7 @@ const AdminLoginPage = () => {
                             id="password"
                             autoComplete="current-password"
                             required
-                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                             onChange={(e) => setPassword(e.target.value)}
                             value={password}
                             aria-describedby="credentials-error"
@@ -40,7 +40,7 @@ const AdminLoginPage = () => {
                     </div>
                     {error && <p id="credentials-error" className="text-red-500 text-sm">{error}</p>}
                     <div>
-                        <button type="submit" className="w-full bg-sky-500 text-white py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium hover:bg-sky-600">
+                        <button type="submit" className="w-full bg-teal-500 text-white py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
                             Login
                         </button>
                     </div>
