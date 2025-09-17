@@ -1,5 +1,5 @@
 // Base URL (from .env or default localhost)
-const API = import.meta.env.VITE_API_BASE;
+const API = import.meta.env.VITE_API_BASE || "http://localhost:8080";
 
 export interface Booking {
   id: number;
