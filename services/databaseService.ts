@@ -1,7 +1,7 @@
 import type { Booking, BookingStatus, BookingDetails, Password } from '../types';
 
 // Base URL (from .env or default localhost)
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL = "https://sparkle-backend-production-d943.up.railway.app";
 
 // ==================== BOOKINGS ====================
 
