@@ -48,7 +48,7 @@ export const getBookingByNumber = async (
 export const createBooking = async (
   booking: Omit<Booking, "id" | "bookingNumber" | "status">
 ): Promise<Booking | null> => {
-  const res = await fetch(`${API}/bookings`, {   // ✅ matches backend now
+  const res = await fetch(`${API}/api/bookings`, {   // ✅ matches backend now
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(booking),
